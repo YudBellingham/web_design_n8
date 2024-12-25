@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nội Thất Phòng Ngủ</title>
+    <link rel="stylesheet" href="test noithat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="test noithat.html">
+                    <img src="images/logo mono.png" alt="Bedroom Store Logo">
+                </a>
+            </div>
+
+            <div class="center-header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+    
+                <div class="auth-buttons">
+                    <a href="#login">Đăng nhập</a>
+                    <a href="#register">Đăng ký</a>
+                </div>
+            </div>
+
+            <div class="cart">
+                <a href="#cart">🛒 Giỏ Hàng</a>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li class="dropdown">
+                    <a href="#products">Sản Phẩm</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Tủ quần áo</a></li>
+                        <li><a href="#">Giường ngủ</a></li>
+                        <li><a href="#">Tủ đầu giường</a></li>
+                        <li><a href="#">Bàn trang điểm</a></li>
+                    </ul>
+                </li>
+                <li><a href="#promotions">Khuyến mãi</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="about us.html" target="_blank">About Us</a></li>
+                <li><a href="showroom.html" target="_blank">Showroom</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <!-- Banner -->
+    <section class="banner-slider" id="home">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/banner.jpg" alt="Banner 1">
+                <div class="banner-text">
+                    <h2>Chào mừng đến với Mono</h2>
+                    <p>Nơi cung cấp nội thất phòng ngủ hiện đại và chất lượng.</p>
+                    <!-- <a href="#products" class="btn">Khám Phá Ngay</a> -->
+                </div> 
+            </div>
+    
+            <div class="slide">
+                <img src="images/banner2.jpg" alt="Banner 2">
+            </div>
+
+            <div class="slide">
+                <img class="banner3" src="images/banner3.jpg" alt="Banner 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/banner4.jpg" alt="Banner 4">
+            </div>
+
+            <div class="slide">
+                <img class="banner5" src="images/banner5.jpg" alt="Banner 5">
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <a href="#products" class="btn">Khám Phá Ngay</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Sản Phẩm Nổi Bật</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/bed.jpg" alt="Giường ngủ hiện đại">
+                    <h3>Giường ngủ gỗ sồi</h3>
+                    <p>7.500.000 VNĐ</p>
+                    <button onclick="addToCart('Giường ngủ gỗ sồi')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/tuquanao.jpg" alt="Tủ quần áo">
+                    <h3>Tủ quần áo 4 cánh</h3>
+                    <p>12.000.000 VNĐ</p>
+                    <button onclick="addToCart('Tủ quần áo 4 cánh')">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/tudaugiuong.jpg" alt="Tủ đầu giường">
+                    <h3>Tủ đầu giường</h3>
+                    <p>2.500.000 VNĐ</p>
+                    <button onclick="addToCart('Tủ đầu giường')">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>NỘI THẤT MONO</h3>
+                <p>Nội Thất MONO là thương hiệu đến từ nhóm 8 môn THIẾT KẾ WEB được thiết kế giao diện lấy cảm hứng từ Nội thất MOHO</p>
+                <img src="images/bocongthuong.png" alt="Bộ Công Thương">
+                <img src="images/dmca.png" alt="DMCA">
+            </div>
+    
+            <div class="footer-section services">
+                <h3>DỊCH VỤ</h3>
+                <ul>
+                    <li><a href="csbh.html" target="_blank">Chính Sách Bán Hàng</a></li>
+                    <li><a href="csghlđ.html" target="_blank">Chính Sách Giao Hàng & Lắp Đặt</a></li>
+                    <li><a href="csbhbt.html" target="_blank">Chính Sách Bảo Hành & Bảo Trì</a></li>
+                    <li><a href="csđt.html" target="_blank">Chính Sách Đổi Trả</a></li>
+                    <li><a href="csđtbh.html" target="_blank">Chính Sách Đối Tác Bán Hàng</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <p><strong>[Khu Vực Tp. Hà Nội]</strong></p>
+                <p>12 P.Chùa Bộc, Quang Trung, Đống Đa, Hà Nội (Nằm trong khuôn viên Học Viện Ngân Hàng)</p>
+                <p>Hotline: 0964 730 494</p>
+            </div>
+    
+            <div class="footer-section fanpage">
+                <h3>FANPAGE</h3>
+                <div class="fanpage-box">
+                    <a href="https://www.facebook.com/profile.php?id=61570847471173" target="_blank">
+                        <img src="images/fanpage-sample.jpg" alt="Fanpage Mono">
+                    </a>
+                    <p>Theo dõi chúng tôi trên Facebook</p>
+                    <button onclick="window.open('https://www.facebook.com/profile.php?id=61570847471173', '_blank')">
+                        Theo dõi Trang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    
+    <script src="test noithat;.js"></script>
+</body>
+</html>
